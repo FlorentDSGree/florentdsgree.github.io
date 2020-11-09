@@ -50,7 +50,7 @@ td, th {
   padding: 8px;
 }
 </style>
-<div class="header1"><b>Forecast the electricity generation in the UK</b></div>
+<div class="header1"><b>Florent Gree</b></div>
 
 <div class="header3"><b>Introduction</b></div>
 <div class="horizlineorange"></div>
@@ -61,104 +61,10 @@ solve here is a regression problem where the electricity generation, in MW, need
 compared: decision tree, random forest, and neural network. Google Colab had been used as framework where a Python script has been created to pre-process
 the data, build the model and perform the analysis. The visualisation are done with the package Plotly.
 </div>
-<div class="header3"><b>Data Mining</b></div>
-<div class="horizlineorange"></div>
-<div class="content">There is a strong negative correlation, around <b>-0.7</b>, between the electricity generation and the temperature. 
-It means the lower the temperature the higher the electricity generation. A variation of the generation is observed for different day of the week 
-(0: Monday, 1: Tuesday, ..., 6: Sunday). Looking at the graph (2,1) is appears that Tuesdays and Thursdays are the days where generation is 
-the more important. Followed by Wednesdays, then Mondays and Fridays. Finally, Saturday and Sunday are the less demanding days. This difference between 
-weekend and weekdays can be seen on the graph (2,2). The months also require different generation level that could be due to the temperature and/or 
-the holidays. The summer months require less electricity than the winter months. Days off and holidays are not considered in this dataset. This information 
-might improve the prediction as long as there is enough data for each cases. The previous day consumption cannot be used as the data quality checks remove 
-some days, hence the continuity of the days cannot be guaranted.
-</div>
-<div class="graph"><object type="text/html" data="https://florentdsgree.github.io/ForecastElectricityGenerationUK/DataMining.html" width="1000" 
-height="650"></object>
-</div>
-<div class="header3"><b>Machine learning</b></div>
-<div class="horizlineorange"></div>
-<div class="content"> Three machine learning algorithms are developed and will be compared. The output to predict is the electricity generation (MW) for 
-each 30 minutes. The inputs are: sequence (30 minutes sampling rate), day (0,1,2,3,4,5,6), weekend (0,1), month (1 to 12), normal (normal temperature), 
-low (low temperature), high (high temperature). The data are split into training and test datasets with the following ratio: 0.8, 0.2.
-</div>
-<div class="header3"><b>Decision Tree</b></div>
-<div class="horizlineorange"></div>
-<div class="content">The left hand side graph shows a comparison between the electricity generation ('Sum') real data and prediction. Ideally, the scatter 
-plot should follow a line. The right hand side graph depicts a comparison between the real generation data and the prediction for 23/08/2018 (day selected 
-randomly). The prediction follows pretty well the real data for this specific day.
-</div>
-<div class="graph"><object type="text/html" data="https://florentdsgree.github.io/ForecastElectricityGenerationUK/PredictionDT.html" width="1700" 
-height="420"></object>
-<div class="header3"><b>Random Forest</b></div>
-<div class="horizlineorange"></div>
-<div class="content">The left hand side graph shows a comparison between the electricity generation ('Sum') real data and prediction. Ideally, the scatter 
-plot should follow a line. The right hand side graph depicts a comparison between the real generation data and the prediction for 23/08/2018 (day selected 
-randomly). The prediction follows pretty well the real data for this specific day. Increasing the number of tree increases the computation time as well as 
-the prediction accuracy. From n_estimators >= 100 the accuracy does not improve significantly, hence 100 trees are selected.
-</div>
-<div class="graph"><object type="text/html" data="https://florentdsgree.github.io/ForecastElectricityGenerationUK/PredictionRF.html" width="1700" 
-height="420"></object>
-<div class="header3"><b>Neural Network</b></div>
-<div class="horizlineorange"></div>
-<div class="content">The left hand side graph shows a comparison between the electricity generation ('Sum') real data and prediction. Ideally, the scatter 
-plot should follow a line. The right hand side graph depicts a comparison between the real generation data and the prediction for 23/08/2018 (day selected 
-randomly). The prediction follows pretty well the real data for this specific day. Increasing the number of layer increases the prediction accuracy. Reduce 
-the number of neurons per layers as it gets closer to the output provide better prediction.
-</div>
-<div class="graph"><object type="text/html" data="https://florentdsgree.github.io/ForecastElectricityGenerationUK/PredictionNN.html" width="1700" 
-height="420"></object>
-<div class="header3"><b>Comparison</b></div>
-<div class="horizlineorange"></div>
-<div class="content">Comparison of metrics for each machine learning algorithms
-</div>
-<table>
-	<tr>
-	 <th>Metrics</th>
-	 <th>Decision Tree</th>
-	 <th>Random Forest</th>
-	 <th>Neural Network</th>
-	</tr>
-	<tr>
-	  <td>R square (coefficient of determination)</td>
-	  <td>0.963</td>
-	  <td>0.978</td>
-	  <td>0.845</td>
-	</tr>
-	<tr>
-	  <td>Mean Absolute Error</td>
-	  <td>730</td>
-	  <td>573</td>
-	  <td>1919</td>
-	</tr>
-	<tr>
-	  <td>Mean Squared Error</td>
-	  <td>1469355</td>
-	  <td>847535</td>
-	  <td>6205901</td>
-	</tr>
-	<tr>
-	  <td>Root Mean Squared Error</td>
-	  <td>1212</td>
-	  <td>920</td>
-	  <td>2491</td>
-	</tr>
-	
-</table>
-<div class="content">Neural network model has the worst performance. Decision tree and random forest present similar performance regarding the absolute error. 
-However, random forest is slightly over-performing decision tree.
-</div>
-<div class="graph"><object type="text/html" data="https://florentdsgree.github.io/ForecastElectricityGenerationUK/ECDFComparison.html" width="820" 
-height="450"></object>
-<div class="content">One week of completly new data are used to evaluate the performance of each model. This highlight that the models are not good enough to 
-accurately predict the electricity generation. The error can come from the data which might not be good enough in terms of quantity and quality. Moreover, model 
-the electricity generation depends on more information than temperature, day, and month. This additional information must be indentified and considered to improve 
-the model accuracy. Finally, the model parameters and training (especially neural network) could be tuned better. However, despite the not optimal accuracy, the 
-trend of two generation peaks (morning and evening) and general shape is always predicted.
-</div>
-<div class="graph"><object type="text/html" data="https://florentdsgree.github.io/ForecastElectricityGenerationUK/PredictionForOneWeek.html" width="1700" 
-height="420"></object>
 
-<div class="horizlineorange"></div>
+
+
+
 <div class="content">Last update: 11/10/2019 
 </div>
 </html>

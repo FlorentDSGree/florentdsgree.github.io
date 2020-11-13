@@ -5,7 +5,7 @@ body {
 }
 /* Header/Logo Title */
 .header1 {
-  padding: 50px; text-align: center; background: linear-gradient(#9a9fad,white); color: #426ff5;font-size: 34px;
+  padding: 50px; text-align: center; color: #426ff5;font-size: 34px;
 }
 .header2 {
   padding: 15px; text-align: center; background: #426ff5; color: white; font-size: 28px;

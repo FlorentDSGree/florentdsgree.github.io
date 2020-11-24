@@ -57,7 +57,7 @@ body {
 }
 
 .container:hover .image {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 .text {

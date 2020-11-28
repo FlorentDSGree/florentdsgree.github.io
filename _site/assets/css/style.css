@@ -132,3 +132,8 @@ img {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+svg {
+  margin: auto;
+  display: block
+}

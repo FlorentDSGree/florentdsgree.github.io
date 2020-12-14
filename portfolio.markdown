@@ -97,7 +97,7 @@ permalink: /portfolio.html
 		<td align="center">
 			<div class="header2">Population Ille-et-Vilaine (French Department)</div>
 			<div class="container">
-				<a href="https://github.com/FlorentDSGree/Population_35FR" target="_blank">
+				<a href="https://florentdsgree.github.io/Population_35FR" target="_blank">
 					<img src="https://florentdsgree.github.io/Population_35FR/Graphs/InteractiveMapPopulation_35_PrintScreen.PNG" class="image" style="width:100%">
 					<div class="overlay">
 						<div class="text">Analysis and visualisation of the population of the French department Ille-et-Vilaine.<br>

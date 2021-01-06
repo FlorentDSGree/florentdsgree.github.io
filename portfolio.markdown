@@ -6,7 +6,7 @@ permalink: /portfolio.html
 
 <div class="content">
 	Many open-source data are available via governments, organisations, companies, etc data platform. I selected some datasets from 
-	various sources and various domains and performed data analysis and visualisation. I am many using Python as programming language 
+	various sources and various domains and performed data analysis and visualisation. I am manly using Python as programming language 
 	and only open-source tools/libraries. Some of my projects can be found below as example of data analysis.
 </div>
 

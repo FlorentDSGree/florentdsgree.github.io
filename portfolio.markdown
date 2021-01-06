@@ -71,8 +71,8 @@ permalink: /portfolio.html
 		<td align="center">
 			<div class="header2">Underground Service (Rennes)</div>
 			<div class="container">
-				<a href="https://github.com/FlorentDSGree/MetroRennes/blob/master/MetroRennes/ReadMe.md" target="_blank">
-					<img src="https://florentdsgree.github.io/MetroRennes/MetroRennes/TraceVoieMetroLine.PNG" class="image" style="width:100%">
+				<a href="https://florentdsgree.github.io/MetroRennes/" target="_blank">
+					<img src="https://florentdsgree.github.io/MetroRennes/docs/RailwayTracksStations.PNG" class="image" style="width:100%">
 					<div class="overlay">
 						<div class="text">Analysis and visualisation of the underground service in Rennes (France).<br>
 										  Tools: Python, Bokeh</div>

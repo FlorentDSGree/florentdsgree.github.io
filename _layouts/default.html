@@ -2,19 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Playfair+Display" />
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://kit.fontawesome.com/3b056676ac.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <nav class="topnav">
-		<a class="btn noHover" style="font-weight:bold;">Florent Grée</a>
-		<div class="topnav-right"> 
-			<a href="index.html">Home</a>
-			<a href="portfolio.html">Portfolio</a>
-			<a href="about.html">About</a>
-		</div>
-	</nav>
+  
+  <nav class="navbar navbar-expand-md navbar-light">
+  <a class="topnav btn noHover" style="font-weight:bold;" href="#">Florent Grée</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="topnav">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="topnav">
+        <a href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="topnav">
+        <a href="about.html">About</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+  
+    <!-- <nav class="topnav"> -->
+		<!-- <a class="btn noHover" style="font-weight:bold;">Florent Grée</a> -->
+		<!-- <div class="topnav-right">  -->
+			<!-- <a href="index.html">Home</a> -->
+			<!-- <a href="portfolio.html">Portfolio</a> -->
+			<!-- <a href="about.html">About</a> -->
+		<!-- </div> -->
+	<!-- </nav> -->
+	
     <div class="header1">{{ page.title }}</div>
     <div class="content">
       {{ content }}

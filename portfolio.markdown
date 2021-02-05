@@ -17,6 +17,20 @@ permalink: /portfolio.html
     </colgroup>
 	<tr>
 		<td align="center">
+			<div class="header2">Essex population</div>
+			<div class="container">
+				<a href="https://florentdsgree.github.io/EssexPopulation" target="_blank">
+					<img src="https://florentdsgree.github.io/EssexPopulation/mapPopulationDensityEssexLSOA.png" class="image" style="width:100%">
+					<div class="overlay">
+						<div class="text">Analysis and visualisation of Essex population.<br>
+										  Tools: Python, Bokeh</div>
+					</div>
+				</a>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td align="center">
 			<div class="header2">Students Performance Analysis</div>
 			<div class="container">
 				<a href="https://www.kaggle.com/florentgree/studentsperformanceanalysis" target="_blank">

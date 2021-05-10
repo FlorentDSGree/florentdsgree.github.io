@@ -32,10 +32,10 @@ permalink: /portfolio.html
 			<div class="header2">Essex ULEV</div>
 			<div class="container">
 				<a href="https://florentdsgree.github.io/EssexULEV" target="_blank">
-					<img src="https://florentdsgree.github.io/EssexULEV/ULEVEssexPostcode_map.png" class="image" style="width:100%">
+					<img src="https://florentdsgree.github.io/EssexULEV/ULEVEssexPostcode_foliumMap.png" class="image" style="width:100%">
 					<div class="overlay">
 						<div class="text">Analysis and visualisation of Ultra Low Emission Vehicle (ULEV) in Essex.<br>
-										  Tools: Python, Bokeh</div>
+										  Tools: Python, Bokeh, Folium</div>
 					</div>
 				</a>
 			</div>

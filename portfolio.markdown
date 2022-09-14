@@ -15,6 +15,34 @@ permalink: /portfolio.html
        <col span="1" style="width: 50%;">
        <col span="1" style="width: 50%;">
     </colgroup>
+	
+	<tr>
+		<td align="center">
+			<div class="header2">Charging station locations for residential areas</div>
+			<div class="container">
+				<a href="https://florentdsgree.github.io/ChargingStationLocationsBasildon" target="_blank">
+					<img src="https://florentdsgree.github.io/ChargingStationLocationsBasildon/ExampleChargingStationLocations.png" class="image" style="height:300px;width:500px;object-fit:cover;">
+					<div class="overlay">
+						<div class="text">Methods to define charging station locations in residential areas.<br>
+										  Tools: Python, QGIS</div>
+					</div>
+				</a>
+			</div>
+		</td>
+		<td align="center">
+			<!-- <div class="header2">Essex ULEV</div>
+			<div class="container">
+				<a href="https://florentdsgree.github.io/EssexULEV" target="_blank">
+					<img src="https://florentdsgree.github.io/EssexULEV/ULEVEssexPostcode_foliumMap.PNG" class="image" style="height:300px;width:500px;object-fit:cover;">
+					<div class="overlay">
+						<div class="text">Analysis and visualisation of Ultra Low Emission Vehicle (ULEV) in Essex.<br>
+										  Tools: Python, Bokeh, Folium</div>
+					</div>
+				</a>
+			</div> -->
+		</td>
+	</tr>
+	
 	<tr>
 		<td align="center">
 			<div class="header2">Essex population</div>

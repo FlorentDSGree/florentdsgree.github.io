@@ -16,6 +16,33 @@ permalink: /portfolio.html
        <col span="1" style="width: 50%;">
     </colgroup>
 	
+		<tr>
+		<td align="center">
+			<div class="header2">Stade Rennais Football Club 22/23 season analysis</div>
+			<div class="container">
+				<a href="https://florentdsgree.github.io/SRFC2223DataAnalysis" target="_blank">
+					<img src="https://florentdsgree.github.io/SRFC2223DataAnalysis/SRFC_rank_occurrence.PNG" class="image" style="height:300px;width:500px;object-fit:cover;">
+					<div class="overlay">
+						<div class="text">Analyse and visualise the 22/23 season of Stade Rennais Football Club.<br>
+										  Tools: Python, Plotly</div>
+					</div>
+				</a>
+			</div>
+		</td>
+		<!-- <td align="center">
+			<div class="header2">MOT data analysis</div>
+			<div class="container">
+				<a href="https://florentdsgree.github.io/MOTDataAnalysis" target="_blank">
+					<img src="https://florentdsgree.github.io/MOTDataAnalysis/ERD.PNG" class="image" style="height:300px;width:500px;object-fit:cover;">
+					<div class="overlay">
+						<div class="text">Analysis and visualisation of MOT data after data storage comparison.<br>
+										  Tools: Python, Plotly, Databricks</div>
+					</div>
+				</a>
+			</div>
+		</td> -->
+	</tr>
+	
 	<tr>
 		<td align="center">
 			<div class="header2">Charging station locations for residential areas</div>

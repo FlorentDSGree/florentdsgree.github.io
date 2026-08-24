@@ -9,8 +9,8 @@ permalink: /index.html
 
 <table>
 	<colgroup>
-       <col span="1" style="width: 40%;">
-       <col span="1" style="width: 60%;">
+       <col span="1" style="width: 50%;">
+       <col span="1" style="width: 50%;">
     </colgroup>
 	<tr>
 		<td align="center">
@@ -59,16 +59,7 @@ permalink: /index.html
 
 					<path d="M240 100 L 232 98.6, 224 97.4, 216 96, 208 95.2, 200 94.6, 192 93.2, 184 90.2, 176 87, 168 81.8, 160 78.2, 152 77.2, 144 78.2, 136 79.6, 128 83.6, 120 87, 112 89, 104 90.6, 96 92, 88 92.8, 80 92.2, 72 91.6, 64 91.4, 56 90.8, 48 90.6, 40 92.4, 32 93.4, 24 94.8, 16 97.4, 8 99.8
 				" stroke="black" fill="transparent"/>
-					<text x="100" y="155" fill="rgb(0,120,180)" font-family="Montserrat" font-size="15">Data Science</text>
-					<text x="15" y="165" fill="rgb(0,120,180)" font-family="Montserrat" font-size="14">Visualisation</text>
-					<text x="30" y="190" fill="rgb(0,120,180)" font-family="Montserrat" font-size="14">Python</text>
-					<text x="140" y="175" fill="rgb(0,120,180)" font-family="Montserrat" font-size="12">Plotly</text>
-					<text x="210" y="155" fill="rgb(0,120,180)" font-family="Montserrat" font-size="13">Map</text>
-					<text x="40" y="125" fill="rgb(0,120,180)" font-family="Montserrat" font-size="14">Machine Learning</text>
-					<text x="90" y="185" fill="rgb(0,120,180)" font-family="Montserrat" font-size="13">HTML</text>
-					<text x="185" y="190" fill="rgb(0,120,180)" font-family="Montserrat" font-size="13">Tableau</text>
-					<text x="170" y="135" fill="rgb(0,120,180)" font-family="Montserrat" font-size="12">MongoDB</text>
-					<text x="50" y="145" fill="rgb(0,120,180)" font-family="Montserrat" font-size="12" text-anchor="middle" transform="rotate(0,50,145)">Probability</text>
+					
 					
 				</svg>
 			</div>		

@@ -1,25 +1,67 @@
 
+:root {
+  --bg: #f7f4f0;
+  --paper: #ffffff;
+  --text: #121212;
+  --muted: #4b5563;
+  --line: rgba(18, 18, 18, 0.08);
+  --accent: #007ab5;
+  --accent-2: #02ccb2;
+  --shadow: 0 10px 30px rgba(17, 17, 17, 0.05);
+}
+
 body {
   font-family: Montserrat;
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 50px;
   margin-right: 50px
 }
 /* Header/Logo Title */
 .header1 {
-  padding: 30px; text-align: left; color: black; font-family: Playfair Display; font-size: 30px;
+  padding: 0;
+  margin: 0 0 14px 0;
+  color: var(--text);
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: clamp(2.1rem, 3vw, 3.2rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  font-weight: 600;
 }
+
 .header2 {
-  padding: 30px; text-align: left; color: black; font-family: Playfair Display; font-size: 26px;
+  padding: 0;
+  margin: 0 0 12px 0;
+  color: var(--text);
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 600;
 }
+
 .header3 {
-  padding: 0px; text-align: left; color: black; font-family: Playfair Display; font-size: 24px;
+  padding: 0;
+  margin: 0 0 10px 0;
+  color: var(--text);
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 .horizlineorange {
   padding: 0.5px; background: #9a9fad;
 }
 /* Page Content */
-.content {padding:15px;margin: 0.5; text-align: center; line-height: 1.5}
+.content {
+  padding: 8px 0;
+  margin: 0;
+  text-align: left;
+  line-height: 1.7;
+  color: var(--text);
+  font-size: 1.05rem;
+}
 /* Graph */
 .graph {padding:0px;margin: 0.5; background: light blue; text-align: center}
 
@@ -81,27 +123,30 @@ img {
 
 .topnav {
   overflow: auto;
-  /* position: sticky; */
-  top:0;
-  background-color: #fff;
-  font-size: 42px;
-  font-family: Playfair Display;
+  top: 0;
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(8px);
+  font-size: 1.1rem;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
 .topnav a {
   float: left;
-  color: #000;
+  color: var(--text);
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;  
-  background: linear-gradient(60deg, #007AB5, #02CCB2) center bottom;
-  background-size: 0% 4px;
+  text-decoration: none;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2)) center bottom;
+  background-size: 0% 2px;
   background-repeat: no-repeat;
-  transition: background 0.2s linear;
+  transition: background 0.25s ease, color 0.2s ease;
+  font-weight: 500;
 }
 
 .topnav a:hover {
-  background-size: 100% 4px; 
+  background-size: 100% 2px;
+  color: var(--text);
 }
 
 .topnav-right {
@@ -128,9 +173,9 @@ img {
 }
 
 .fa-gradient {
-	background: -webkit-gradient(linear, left top, left bottom, from(#007AB5), to(#02CCB2));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 svg {
@@ -141,4 +186,23 @@ svg {
 
 * {
   box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+}
+
+td {
+  vertical-align: top;
+  padding: 0;
+  line-height: 0;
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }

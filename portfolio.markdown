@@ -4,13 +4,13 @@ title: Portfolio
 permalink: /portfolio.html
 ---
 
-<div class="content">
+<div class="content portfolio-intro">
 	Many open-source data are available via governments, organisations, companies, etc data platform. I selected some datasets from 
 	various sources and various domains and performed data analysis and visualisation. I am mainly using Python as programming language 
 	and only open-source tools/libraries. Some of my projects can be found below as example of data analysis.
 </div>
 
-<table>
+<table class="portfolio-grid">
 	<colgroup>
        <col span="1" style="width: 50%;">
        <col span="1" style="width: 50%;">

@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   margin-left: 50px;
   margin-right: 50px
@@ -21,7 +21,7 @@ body {
   padding: 0;
   margin: 0 0 14px 0;
   color: var(--text);
-  font-family: "Georgia", "Times New Roman", serif;
+  font-family: "Playfair Display", serif;
   font-size: clamp(2.1rem, 3vw, 3.2rem);
   line-height: 1.05;
   letter-spacing: -0.04em;
@@ -32,7 +32,7 @@ body {
   padding: 0;
   margin: 0 0 12px 0;
   color: var(--text);
-  font-family: "Georgia", "Times New Roman", serif;
+  font-family: "Playfair Display", serif;
   font-size: 1.6rem;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -43,7 +43,7 @@ body {
   padding: 0;
   margin: 0 0 10px 0;
   color: var(--text);
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.05rem;
   line-height: 1.4;
   letter-spacing: 0.08em;
@@ -128,7 +128,7 @@ img {
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(8px);
   font-size: 1.1rem;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .topnav a {
@@ -251,5 +251,120 @@ td {
 
   .data-emblem-image {
     width: 80%;
+  }
+}
+
+.portfolio-intro {
+  max-width: 900px;
+  margin: 0 auto 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.portfolio-grid {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 16px 32px;
+  margin: -16px;
+}
+
+.portfolio-grid td {
+  width: 50%;
+  padding: 0 0 8px;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.portfolio-grid .header2 {
+  min-height: 2.5em;
+  margin: 0 0 6px;
+  padding: 0 8px;
+  color: var(--text);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.portfolio-grid .container {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+  box-shadow: var(--shadow);
+}
+
+.portfolio-grid .container a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.portfolio-grid .image {
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+  opacity: 1;
+  transition: transform 280ms ease, filter 280ms ease;
+}
+
+.portfolio-grid .overlay {
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  background: linear-gradient(180deg, transparent 20%, rgba(7, 27, 38, 0.88));
+  opacity: 0;
+  transition: opacity 280ms ease;
+}
+
+.portfolio-grid .text {
+  position: static;
+  width: 100%;
+  color: #fff;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  text-align: left;
+  transform: none;
+}
+
+.portfolio-grid .container:hover .image,
+.portfolio-grid .container:focus-within .image {
+  opacity: 0.92;
+  transform: scale(1.025);
+  filter: saturate(1.08);
+}
+
+.portfolio-grid .container:hover .overlay,
+.portfolio-grid .container:focus-within .overlay {
+  opacity: 1;
+}
+
+@media (max-width: 700px) {
+  .portfolio-grid {
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-spacing: 0;
+  }
+
+  .portfolio-grid tbody,
+  .portfolio-grid tr {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-grid td {
+    width: 100%;
+    padding: 0 0 28px;
   }
 }

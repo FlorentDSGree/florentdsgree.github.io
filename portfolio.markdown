@@ -5,9 +5,9 @@ permalink: /portfolio.html
 ---
 
 <div class="content portfolio-intro">
-	Many open-source data are available via governments, organisations, companies, etc data platform. I selected some datasets from 
-	various sources and various domains and performed data analysis and visualisation. I am mainly using Python as programming language 
-	and only open-source tools/libraries. Some of my projects can be found below as example of data analysis.
+	I work with open‑source datasets from government platforms, organisations, and public APIs to perform data analysis, modelling, and visualisation. All projects are developed in Python using open‑source libraries.<br><br>
+
+	The portfolio includes examples related to energy and environmental topics, alongside exploratory projects driven by curiosity and experimentation across various domains.
 </div>
 
 <table class="portfolio-grid">

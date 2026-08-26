@@ -9,15 +9,16 @@ permalink: /index.html
 
 <table>
 	<colgroup>
-       <col span="1" style="width: 50%;">
-       <col span="1" style="width: 50%;">
+       <col span="1" style="width: 60%;">
+       <col span="1" style="width: 40%;">
     </colgroup>
 	<tr>
 		<td class="intro-cell">
-			<div class="content">I am data scientist working in automotive area. From electrical engineering background, 
-								 I steered my career towards data and visualisation world.<br><br>I am eager to learn new skills 
-								 and try different data analysis approach. During my spare time, I am experimenting new 
-								 tools and methods in projects you can find in the portfolio page.
+			<div class="content">Senior Data & AI Engineer with an electrical engineering background and a master's degree specialising in Renewable Energy & Climate Change.<br><br>
+
+			I started my career in automotive, focusing on decarbonising powertrains through electric and hybrid vehicle technologies. I later specialised in AI and cloud engineering, working with a Microsoft partner to build scalable Azure‑based data, AI, and ML solutions.<br><br>
+
+			I am now focused on applying my skills to climate‑tech and renewable‑energy projects that deliver real environmental and social impact, while continuing to explore data science more broadly. My portfolio reflects both mission‑driven work and personal projects driven by curiosity, experimentation, and a passion for learning new approaches.
 			</div>
 		</td>
 		<td class="animation-cell">
